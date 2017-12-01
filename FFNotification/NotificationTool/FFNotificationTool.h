@@ -34,6 +34,7 @@ typedef void(^AddNotificationBlock)(BOOL success, NSString * _Nullable resultStr
 /** add notification */
 + (void)addNotificationAddNotificationBlock:(AddNotificationBlock _Nullable)addNotificationBlock;
 
++ (UNMutableNotificationContent *)ContentWithTitle:(NSString *)title SubTitle:(NSString *)subTtitle Body:(NSString *)body  Badge:(NSNumber *)badge Sound:(NSString *)sound UserInfo:(NSDictionary *)userInfo;
 
 
 
